@@ -69,7 +69,7 @@ let showCreatePost = ref(false);
                 </Link>
                 <Link href="/notifications">
                 <MenuItem iconString="Notifications" class="mb-4" />
-                </Link> 
+                </Link>
                 <MenuItem @click="$event => showCreatePost = true" iconString="Create" class="mb-4" />
                 <Link href="/profile">
                 <MenuItem iconString="Profile" class="mb-4" />
@@ -111,7 +111,7 @@ let showCreatePost = ref(false);
                 </div>
 
                 <Link href="/" class="flex items-center justify-between max-w-[300px] pb-2">
-                    <div class="flex items-center">
+                <div class="flex items-center">
                     <img class="rounded-full z-10 w-[37px] h-[37px]" src="https://picsum.photos/id/211/300/320" alt="">
                     <div class="pl-4">
                         <div class="text-black font-extrabold">NAME HERE</div>
@@ -124,21 +124,23 @@ let showCreatePost = ref(false);
                 </button>
                 </Link>
                 <div class="max-w-[300px] mt-5">
-                <div class="text-sm text-gray-400">About Help Press Api Jobs Privacy Terms Locations Language Meta Verified</div>
-                <div class="text-left text-gray-400 mt-4">@ 2023 INSTAGRAM FROM META</div>
-            </div>
+                    <div class="text-sm text-gray-400">About Help Press Api Jobs Privacy Terms Locations Language Meta
+                        Verified</div>
+                    <div class="text-left text-gray-400 mt-4">@ 2023 INSTAGRAM FROM META</div>
+                </div>
             </div>
         </div>
-        <div id="BottomNav" class="fixed z-30 bottom-0 w-full md:hidden flex items-center justify-around bg-white border-t py-2 border-t-gray-300">
+        <div id="BottomNav"
+            class="fixed z-30 bottom-0 w-full md:hidden flex items-center justify-around bg-white border-t py-2 border-t-gray-300">
             <Link href="/">
-                <HomeOutline fillColor="#000000" :size="33" class="cursor-pointer" />
+            <HomeOutline fillColor="#000000" :size="33" class="cursor-pointer" />
             </Link>
             <Compass fillColor="#000000" :size="33" class="cursor-pointer"></Compass>
             <SendOutline fillColor="#000000" :size="33" class="cursor-pointer"></SendOutline>
             <Plus @click="$event => showCreatePost = true" fillColor="#000000" :size="33" class="cursor-pointer"></Plus>
             <AccountOutline fillColor="#000000" :size="33" class="cursor-pointer"></AccountOutline>
             <Link href="/">
-                <img class="rounded-full w-[30px] cursor-pointer" src="https://picsum.photos/id/111/300/320" alt="">
+            <img class="rounded-full w-[30px] cursor-pointer" src="https://picsum.photos/id/111/300/320" alt="">
             </Link>
         </div>
     </div>
