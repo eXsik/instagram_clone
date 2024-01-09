@@ -6,7 +6,7 @@ import MainLayout from '@/Layouts/MainLayout.vue';
     <Head title="Home" />
 
     <MainLayout>
-        <div class="bg-gray-600 min-h-[100vh] text-white">
+        <div class="bg-gray-600 text-white">
             HOME.VUE
         </div>
     </MainLayout>
