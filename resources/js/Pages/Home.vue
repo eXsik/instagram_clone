@@ -53,8 +53,8 @@ onMounted(() => {
                 <div class="flex items-center justify-between py-2">
                     <div class="flex items-center">
                         <Link href="/" class="flex items-center">
-                            <img class="rounded-full w-[38px] h-[38px]" src="https://picsum.photos/id/53/300/320" alt="">
-                            <div class="ml-4 font-extrabold text-[15px]">NAME HERE</div>
+                        <img class="rounded-full w-[38px] h-[38px]" src="https://picsum.photos/id/53/300/320" alt="">
+                        <div class="ml-4 font-extrabold text-[15px]">NAME HERE</div>
                         </Link>
                         <div class="flex items-center text-[15px] text-gray-500">
                             <span class="-mt-5 ml-2 mr-[5px] text-[35px]">
@@ -64,7 +64,7 @@ onMounted(() => {
                         </div>
                     </div>
 
-                <DotsHorizontal class="cursor-pointer" :size="27"></DotsHorizontal>
+                    <DotsHorizontal class="cursor-pointer" :size="27"></DotsHorizontal>
                 </div>
                 <div class="bg-black rounded-lg w-full min-h-[400px] flex items-center">
                     <img class="mx-auto w-full" src="https://picsum.photos/id/88/600/620" alt="">
@@ -77,13 +77,13 @@ onMounted(() => {
 </template>
 
 <style>
-    .carousel__prev,
-    .carousel__next,
-    .carousel__prev:hover,
-    .carousel__next:hover {
-        color: rgba(49, 49, 49);
-        background: rgba(255, 255, 255, 0.8);
-        border-radius: 100%;
-        margin: 0 20px;
-    }
+.carousel__prev,
+.carousel__next,
+.carousel__prev:hover,
+.carousel__next:hover {
+    color: rgba(49, 49, 49);
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 100%;
+    margin: 0 20px;
+}
 </style>
