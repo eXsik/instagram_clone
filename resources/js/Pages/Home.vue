@@ -8,6 +8,7 @@ import DotsHorizontal from 'vue-material-design-icons/DotsHorizontal.vue'
 
 import MainLayout from '@/Layouts/MainLayout.vue';
 import LikesSection from '@/Components/LikesSection.vue';
+import ShowPostOverlay from "@/Components/ShowPostOverlay.vue";
 
 let windowWidth = ref(window.innerWidth);
 let currentSlide = ref(0);
@@ -77,12 +78,14 @@ onMounted(() => {
                     <span class="text-black font-extrabold">NAME HERE</span>
                     this is some text here
                 </div>
-                <button class="text-gray-500 font-extrabold py-1">
+                <button class="text-gray-500 font-extrabold py-1" @click="$event => openOverlay = true">
                     View all 4 comments
                 </button>
             </div>
         </div>
     </MainLayout>
+
+    <ShowPostOverlay v-if="openOverlay" :post="currentPost" @closeOverlay="$event => openOverlay = false"></ShowPostOverlay>
 </template>
 
 <style>
