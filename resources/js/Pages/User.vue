@@ -3,11 +3,11 @@ import { toRefs, reactive } from 'vue';
 import { Head, Link, router } from '@inertiajs/vue3';
 
 import MainLayout from '@/Layouts/MainLayout.vue';
+import ContentOverlay from '@/Components/ContentOverlay.vue';
 
 import Cog from 'vue-material-design-icons/Cog.vue';
 import Grid from 'vue-material-design-icons/Grid.vue';
 import PlayBoxOutline from 'vue-material-design-icons/PlayBoxOutline.vue';
-import BookmarkOutline from 'vue-material-design-icons/BookmarkOutline.vue';
 import AccountOutline from 'vue-material-design-icons/AccountOutline.vue';
 
 let data = reactive({ post: null });
@@ -71,11 +71,11 @@ const getUploadedImage = (event) => {
                 <div class="text-center p-3">
                     <div class="font-extrabold">3</div>
                     <div class="text-gray-400 font-semibold -mt-1 5">posts</div>
-                </div>   
+                </div>
                 <div class="text-center p-3">
                     <div class="font-extrabold">43</div>
                     <div class="text-gray-400 font-semibold -mt-1 5">followers</div>
-                </div>   
+                </div>
                 <div class="text-center p-3">
                     <div class="font-extrabold">55</div>
                     <div class="text-gray-400 font-semibold -mt-1 5">following</div>
@@ -84,7 +84,7 @@ const getUploadedImage = (event) => {
             <div class="w-full flex items-center justify-between border-t border-t-gray-300">
                 <div class="p-3 w-1/3 flex justify-center border-t border-t-gray-900">
                     <Grid :size="28" fillColor="#0095f6" class="cursor-pointer"></Grid>
-                </div>   
+                </div>
                 <div class="p-3 w-1/3 flex justify-center">
                     <PlayBoxOutline :size="28" fillColor="#8E8E8E" class="cursor-pointer"></PlayBoxOutline>
                 </div>
@@ -96,15 +96,16 @@ const getUploadedImage = (event) => {
 
         <div id="ContentSection" class="md:pr-1.5 lg:pl-0 md:pl-[90px]">
             <div class="md:block mt-10 hidden border-t border-t-gray-300">
-                <div class="flex items-center justify-between max-w-[600px] mx-auto font-extrabold text-gray-400 text-[15px]">
+                <div
+                    class="flex items-center justify-between max-w-[600px] mx-auto font-extrabold text-gray-400 text-[15px]">
                     <div class="p-[17px] w-1/3 flex justify-center items-center border-t border-t-gray-900">
                         <Grid :sze="15" fillColor="#000000" class="cursor-pointer"></Grid>
                         <div class="ml-2 -mb-[1px] text-gray-900">POSTS</div>
-                    </div>  
-                     <div class="p-[17px] w-1/3 flex justify-center items-center">
+                    </div>
+                    <div class="p-[17px] w-1/3 flex justify-center items-center">
                         <PlayBoxOutline :sze="15" fillColor="#000000" class="cursor-pointer"></PlayBoxOutline>
                         <div class="ml-2 -mb-[1px] text-gray-900">REELS</div>
-                    </div>   
+                    </div>
                     <div class="p-[17px] w-1/3 flex justify-center items-center">
                         <AccountOutline :sze="15" fillColor="#000000" class="cursor-pointer"></AccountOutline>
                         <div class="ml-2 -mb-[1px] text-gray-900">TAGGED</div>
@@ -117,5 +118,3 @@ const getUploadedImage = (event) => {
         </div>
     </MainLayout>
 </template>
-
-
