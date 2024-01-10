@@ -49,7 +49,7 @@ onMounted(() => {
                 </template>
             </Carousel>
 
-            <div id="Posts" class="px-4 mx-w-[600px] mx-auto mt-10">
+            <div id="Posts" class="px-4 mx-w-[600px] mx-auto mt-10 pb-20">
                 <div class="flex items-center justify-between py-2">
                     <div class="flex items-center">
                         <Link href="/" class="flex items-center">
@@ -71,6 +71,15 @@ onMounted(() => {
                 </div>
 
                 <LikesSection></LikesSection>
+                
+                <div class="text-black font-extrabold py-1">3 likes</div>
+                <div>
+                    <span class="text-black font-extrabold">NAME HERE</span>
+                    this is some text here
+                </div>
+                <button class="text-gray-500 font-extrabold py-1">
+                    View all 4 comments
+                </button>
             </div>
         </div>
     </MainLayout>
