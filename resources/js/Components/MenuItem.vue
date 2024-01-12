@@ -14,7 +14,7 @@ import Logout from 'vue-material-design-icons/Logout.vue';
 const props = defineProps({ iconString: String });
 const { iconString } = toRefs(props);
 
-// const user = usePage().props.auth.user;
+const user = usePage().props.auth.user;
 
 let icon = null
 
@@ -35,7 +35,7 @@ if (iconString.value === 'Log out') icon = Logout;
         class="w-full xl:inline-block xl:hover:bg-gray-100 p-2 rounded-full transition duration-300 ease-in-out cursor-pointer">
         <div class="flex items-center justify-center md:justify-start">
             <img v-if="iconString === 'Profile'" :class="{ 'mr-1': iconString === 'Profile' }"
-                class="rounded-full ml-[2px] w-[30px] cursor-pointer" src="https://picsum.photos/id/16/300/320" alt="">
+                class="rounded-full ml-[2px] w-[30px] cursor-pointer" :src="user.file" alt="">
             <component v-else :is="icon" fillColor="#000000" :size="30" />
             <span class="xl:block hidden text-black font-extrabold text-[18px] pl-2 mt-0.5">
                 {{ iconString }}

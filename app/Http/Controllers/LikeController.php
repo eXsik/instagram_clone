@@ -24,7 +24,7 @@ class LikeController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Number $id): void
+    public function destroy(string $id): void
     {
         $like = Like::find($id);
 
